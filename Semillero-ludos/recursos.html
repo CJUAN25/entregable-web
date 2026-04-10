@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUDOS | RECURSOS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark nav-ludos fixed-top">
+            <div class="container">
+                <a class="navbar-brand contenedor-logo" href="index.html">
+                    <img src="./assets/img/logo/LOGO_1.png" alt="Logo" width="50" height="50">
+                    <span class="texto-logo">JVR</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-label="Abrir menú de navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav menu-derecha">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos y Eventos</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="recursos.html">Recursos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="espaciado-menu">
+        
+        <section class="container encabezado-centrado seccion-margen">
+            <h2>Recursos y Galería</h2>
+            <hr class="linea-roja">
+        </section>
+
+        <section class="container seccion-margen">
+            <div class="encabezado-seccion">
+                <h3>Productos Académicos</h3>
+            </div>
+            
+            <div class="lista-productos">
+                <div class="item-producto">
+                    <div class="icono-producto">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="info-producto">
+                        <h4>Realidad Virtual en la Educación Amazónica</h4>
+                        <p class="autores">Authors: A. Bamas, H. Horers, E. Blonson</p>
+                        <p class="detalles">Tipo | Libro | 2021</p>
+                    </div>
+                    <div class="boton-descarga-contenedor">
+                        <a href="#" class="boton-rojo boton-descarga"><i class="fas fa-file-pdf"></i> Descargar PDF</a>
+                    </div>
+                </div>
+
+                <div class="item-producto">
+                    <div class="icono-producto">
+                        <i class="far fa-newspaper"></i>
+                    </div>
+                    <div class="info-producto">
+                        <h4>Serious Games para el Cuidado Ambiental</h4>
+                        <p class="autores">Authors: B. Los, J. N. Nata</p>
+                        <p class="detalles">Tipo | Artículo | 2022</p>
+                    </div>
+                    <div class="boton-descarga-contenedor">
+                        <a href="#" class="boton-rojo boton-descarga"><i class="fas fa-file-pdf"></i> Descargar PDF</a>
+                    </div>
+                </div>
+
+                <div class="item-producto">
+                    <div class="icono-producto">
+                        <i class="far fa-newspaper"></i>
+                    </div>
+                    <div class="info-producto">
+                        <h4>Simulación 3D de Ecosistemas</h4>
+                        <p class="autores">Authors: D. Mas, J. B. Pates</p>
+                        <p class="detalles">Tipo | Artículo | 2022</p>
+                    </div>
+                    <div class="boton-descarga-contenedor">
+                        <a href="#" class="boton-rojo boton-descarga"><i class="fas fa-file-pdf"></i> Descargar PDF</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container seccion-margen">
+            <div class="encabezado-seccion">
+                <h3>Galería de Imágenes</h3>
+            </div>
+
+            <div class="row g-4"> 
+                
+                <div class="col-md-3 col-sm-6">
+                    <div class="tarjeta-galeria">
+                       <a href="#" onclick="cambiarFotoModal('./assets/img/galeria/estudiantes.png')" data-bs-toggle="modal" data-bs-target="#modalUnico">
+                            <img src="./assets/img/galeria/estudiantes.png" alt="Estudiantes VR" class="imagen-galeria">
+                        </a>
+                        <div class="titulo-galeria">
+                            <p>Estudiantes con Gafas VR</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="tarjeta-galeria">
+                        <a href="#" onclick="cambiarFotoModal('./assets/img/galeria/simulacion.jpg')" data-bs-toggle="modal" data-bs-target="#modalUnico">
+                            <img src="./assets/img/galeria/simulacion.jpg" alt="Simulación" class="imagen-galeria">
+                        </a>
+                        <div class="titulo-galeria">
+                            <p>Simulación Reforestación</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="tarjeta-galeria">
+                        <a href="#" onclick="cambiarFotoModal('./assets/img/galeria/hack.jpg')" data-bs-toggle="modal" data-bs-target="#modalUnico">
+                            <img src="./assets/img/galeria/hack.jpg" alt="Hackathon" class="imagen-galeria">
+                        </a>
+                        <div class="titulo-galeria">
+                            <p>Hackathon 2026</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="tarjeta-galeria">
+                       <a href="#" onclick="cambiarFotoModal('./assets/img/galeria/taller.jpg')" data-bs-toggle="modal" data-bs-target="#modalUnico">
+                            <img src="./assets/img/galeria/taller.jpg" alt="Taller" class="imagen-galeria">
+                        </a>
+                        <div class="titulo-galeria">
+                            <p>Taller VR en Escuela Rural</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer-verde text-white">
+        <div class="container footer-contenido">
+            <div class="footer-logo-texto">
+                <img src="./assets/img/logo/uniamazonia.png" alt="Logo Uniamazonia" height="50" class="logo-footer">
+                <span>Universidad de la Amazonia</span>
+            </div>
+            <span>Derechos Reservados 2026</span>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="modalUnico" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img id="imagenEnElMarco" src="" alt="Imagen ampliada" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

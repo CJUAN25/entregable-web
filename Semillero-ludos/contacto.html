@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUDOS | CONTACTO</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark nav-ludos fixed-top">
+            <div class="container">
+                <a class="navbar-brand contenedor-logo" href="index.html">
+                    <img src="./assets/img/logo/LOGO_1.png" alt="Logo" width="50" height="50">
+                    <span class="texto-logo">JVR</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-label="Abrir menú de navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav menu-derecha">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos y Eventos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="recursos.html">Recursos</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="espaciado-menu">
+
+        <section class="container encabezado-centrado seccion-margen">
+            <h2>Contáctanos</h2>
+            <p class="texto-descriptivo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </section>
+
+        <section class="container seccion-margen">
+            <div class="row fila-centrada"> 
+                <div class="col-md-8">
+                    <div class="encabezado-seccion">
+                        <h3>Envíanos un Mensaje</h3>
+                    </div>
+
+                    <div class="caja-formulario">
+                        <form id="formularioContacto" onsubmit="validarFormulario(event)">
+                            
+                            <div class="grupo-campo">
+                                <label for="nombre">Nombre Completo</label>
+                                <input type="text" id="nombre" class="campo-texto" placeholder="Escribe tu nombre" required>
+                            </div>
+
+                            <div class="grupo-campo">
+                                <label for="correo">Correo Electrónico</label>
+                                <input type="email" id="correo" class="campo-texto" placeholder="ejemplo@correo.com" required>
+                            </div>
+
+                            <div class="grupo-campo">
+                                <label for="mensaje">Mensaje</label>
+                                <textarea id="mensaje" class="campo-texto area-mensaje" placeholder="¿En qué podemos ayudarte?" required></textarea>
+                            </div>
+
+                            <div id="mensajeError" class="mensaje-error">Por favor, completa todos los campos correctamente.</div>
+
+                            <button type="submit" class="boton-rojo boton-evento boton-ancho-completo">Enviar Mensaje</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container seccion-margen">
+            <div class="row fila-centrada">
+                <div class="col-md-8">
+                    
+                    <div class="tarjeta-info-contacto">
+                        <i class="far fa-envelope icono-contacto"></i>
+                        <div class="texto-info-contacto">
+                            <h4>Correo Institucional</h4>
+                            <p>contacto.ludos@uniamazonia.edu.co</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-info-contacto">
+                        <i class="fas fa-map-marker-alt icono-contacto"></i>
+                        <div class="texto-info-contacto">
+                            <h4>Ubicación</h4>
+                            <p>Universidad de la Amazonia, Florencia, Caquetá</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-info-contacto tarjeta-redes">
+                        <h4 class="titulo-redes">Síguenos</h4>
+                        <div class="redes-iconos">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <footer class="footer-verde text-white">
+        <div class="container footer-contenido">
+            <div class="footer-logo-texto">
+                <img src="./assets/img/logo/uniamazonia.png" alt="Logo Uniamazonia" height="50" class="logo-footer">
+                <span>Universidad de la Amazonia</span>
+            </div>
+            <span>Derechos Reservados 2026</span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
