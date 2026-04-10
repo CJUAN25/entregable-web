@@ -1,17 +1,13 @@
 
 console.log("¡El archivo JavaScript de LUDOS está funcionando correctamente!");
 
-/* ==========================================
-   1. GALERÍA DE IMÁGENES (Página Recursos)
-   ========================================== */
+/* 1. GALERÍA DE IMÁGENES (Página Recursos) */
 function cambiarFotoModal(rutaDeLaFoto) {
     let imagenDestino = document.getElementById('imagenEnElMarco');
     imagenDestino.src = rutaDeLaFoto;
 }
 
-/* ==========================================
-   2. VALIDACIONES DE FORMULARIO (Página Contacto)
-   ========================================== */
+/*  2. VALIDACIONES DE FORMULARIO  */
 function validarFormulario(evento) {
     evento.preventDefault();
     let nombre = document.getElementById('nombre').value;
@@ -28,9 +24,7 @@ function validarFormulario(evento) {
     }
 }
 
-/* ==========================================
-   3. ANIMACIÓN EN CASCADA (Página Nosotros)
-   ========================================== */
+/*  3. ANIMACIÓN EN CASCADA  */
 document.addEventListener("DOMContentLoaded", function() {
     const tarjetas = document.querySelectorAll(".tarjeta-animada");
     
