@@ -550,4 +550,33 @@ body {
     margin-right: 15px;
 }
 
+/*ANIMACIONES PERSONALIZADAS */
 
+/* Efecto cascada para las tarjetas */
+.tarjeta-animada {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.tarjeta-animada.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Animación de latido*/
+@keyframes latido {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.boton-latido {
+    animation: latido 2s infinite; 
+}
+
+
+.boton-latido:hover {
+    animation: none;
+    transform: scale(1.05);
+}
